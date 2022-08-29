@@ -1,0 +1,22 @@
+footer {
+  height: 140px;
+  background-color: #0084ae;
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 90px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.links {
+  color: #fff;
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 65px;
+
+  &__item {
+    margin-bottom: 8px;
+  }
+}

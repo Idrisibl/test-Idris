@@ -1,0 +1,59 @@
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 22px;
+  margin-bottom: 44px;
+  position: relative;
+
+  b {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  &__option {
+    width: 241px;
+    height: 46px;
+    border: 1px solid #bababa;
+    border-radius: 7px;
+  }
+
+  &__popup {
+    width: 241px;
+    height: 139px;
+    border: 1px solid #bababa;
+    border-radius: 7px;
+    transition: 0.3s ease;
+    z-index: 5;
+
+    ul {
+      padding-top: 15px;
+      list-style: none;
+      text-align: right;
+      padding-right: 36px;
+      font-size: 20px;
+      font-weight: 500;
+
+      li:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      margin-right: 30px;
+    }
+
+    img {
+      padding-right: 18px;
+    }
+  }
+}

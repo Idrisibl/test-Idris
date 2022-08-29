@@ -1,0 +1,60 @@
+.content {
+  margin-bottom: 136px;
+}
+
+h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 41px;
+}
+
+table {
+  padding: 85px 0;
+  border-spacing: 40px 20px;
+  font-size: 20px;
+
+  tr {
+    td:first-child {
+      text-align: right;
+      color: #8a8a8a;
+    }
+
+    td:last-child {
+      font-weight: 500;
+    }
+
+    &:nth-last-child(-n + 3) {
+      td {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+.delivered {
+  color: green;
+}
+
+.not-delivered {
+  color: red;
+}
+
+.btn__wrapper {
+  display: flex;
+  justify-content: center;
+
+  button {
+    height: 68px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #00b3ec;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

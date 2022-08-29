@@ -1,0 +1,53 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 558px;
+  min-height: 245px;
+  left: 624px;
+  top: 0px;
+  border-radius: 6px;
+  border: 1px solid #bababa;
+  margin: 10px;
+  text-decoration: none;
+  color: #000;
+  padding: 27px 43px;
+  position: relative;
+  left: 0;
+
+  &::visited {
+    color: inherit;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  &__address {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  &__position {
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    border-radius: 50%;
+    background-color: #0084ae;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+  }
+}
