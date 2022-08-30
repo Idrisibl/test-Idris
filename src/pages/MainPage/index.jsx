@@ -9,7 +9,6 @@ const MainPage = () => {
   const [fetching, setFetching] = React.useState(true);
 
   const data = useSelector((state) => state.card.card);
-  const result = useSelector((state) => state.card.result);
   const sort = useSelector((state) => state.filter.sort);
 
   const dispatch = useDispatch();
@@ -21,7 +20,7 @@ const MainPage = () => {
         () => setFetching(false)
       );
     }
-  }, [fetching]);
+  }, [fetching, sort]);
 
   React.useEffect(() => {
     document.addEventListener("scroll", scrollHandler);
@@ -33,17 +32,14 @@ const MainPage = () => {
 
   const scrollHandler = (e) => {
     if (
-      e.target.documentElement.scrollHeight -
-        (e.target.documentElement.scrollTop + window.innerHeight) <
-      100
-    ) {
+      e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100) {
       setFetching(true);
     }
   };
 
   return (
     <>
-      <Sort />
+      <Sort currentPage={currentPage} setCurrentPage={setCurrentPage} sort={sort} />
       <div className="cards">
         {data?.items.map((item) => (
           <Card key={item.id} item={item} />

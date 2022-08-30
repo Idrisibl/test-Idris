@@ -4,6 +4,7 @@
   padding-top: 22px;
   margin-bottom: 44px;
   position: relative;
+ 
 
   b {
     font-size: 20px;
@@ -26,6 +27,7 @@
     border-radius: 7px;
     transition: 0.3s ease;
     z-index: 5;
+    
 
     ul {
       padding-top: 15px;
@@ -45,6 +47,7 @@
     display: flex;
     justify-content: flex-end;
     padding-top: 10px;
+    cursor: pointer;
 
     span {
       font-size: 20px;
@@ -56,4 +59,10 @@
       padding-right: 18px;
     }
   }
+
+  
+}
+
+.sortName { 
+  cursor: pointer;
 }

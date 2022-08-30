@@ -5,16 +5,18 @@ import { changeOrderStatus, fetchOrder } from "../../redux/cardSlice";
 
 const OrderPage = () => {
   const { id } = useParams();
+
   const order = useSelector((state) => state.card.order);
+
   const dispatch = useDispatch();
 
   const changeStatus = () => {
-    dispatch(changeOrderStatus({ order, id }));
+      dispatch(changeOrderStatus({ order, id }));
   };
 
   React.useEffect(() => {
     dispatch(fetchOrder(id));
-  }, [id]);
+  }, [id, dispatch]);
 
   if (!order) {
     return <>Загрузка...</>;
@@ -22,7 +24,7 @@ const OrderPage = () => {
 
   return (
     <div className="content">
-      <h1>Подробности заказа</h1>
+      <h2>Подробности заказа</h2>
       <table>
         <tbody>
           <tr>
